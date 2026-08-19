@@ -1,0 +1,32 @@
+baseURL = "https://zhonguoxin.github.io/xxt-blog/"
+languageCode = "zh-cn"
+title = "xxt-blog"
+theme = "PaperMod"
+
+paginate = 10
+
+[params]
+  env = "production"
+  author = "zhonguoxin"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+
+  [params.homeInfoParams]
+    Title = "欢迎来到 xxt-blog"
+    Content = "这是一个基于 Hugo + GitHub Pages 的个人博客。"
+
+[frontmatter]
+  date = [":date", ":filename", ":default"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
